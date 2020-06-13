@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Page 1</title>
+</head>
+<body>
+<h1>Page 1</h1>
+<form action="page2.html">
+<button>Page2</button>
+</form>
+<script type="text/javascript">
+    var clicks = 0;
+    function plus() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+	function minus() {
+        clicks -= 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+	
+</script>
+<button type="button" onClick="plus()">+</button>
+<button type="button" onClick="minus()">-</button>
+
+<p>Count: <a id="clicks">0</a></p>
+
+</body>
+</html>
